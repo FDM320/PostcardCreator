@@ -1,7 +1,6 @@
 # PostcardCreator
 ------------------------------------------
 # Important!
-------------------------------------------
 The very first thing that you need to do in order to use this application is go to your Gmail account and let less secure apps access your account.
 You can do this by following these steps:
 1. Go to your Google Account.
