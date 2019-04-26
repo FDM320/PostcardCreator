@@ -14,7 +14,8 @@ I had originally started developing a desktop Twitter app, but I struggled to ge
 Even the examples provided by the Twitter API documentation weren't working for me. I'm not sure if maybe I set my developer account up incorrectly. <br>
 In any case, I decided that the Twitter API was too frustrating, and I don't use Twitter anyways, so I changed to the postcard creating app. <br>
 I wanted to add some of the bonus features, but unfortunately I ran out of time and had to exclude them. <br><br>
-Steps to run:
+
+Steps to run: <br>
 In order to run the application, you have to use a Gmail account. I wanted to add support for other mail services, but I ran out of time. <br>
 You must set up your Gmail account to let less secure apps access your account. I wanted to get authorization through Gmail's API, but I didn't see an easy way to do this without knowing the user's account credentials beforehand. <br>
 After you've made sure Gmail won't block the app, all you have to do is run it in Visual Studio. The app itself is pretty self-explanatory. <br>
