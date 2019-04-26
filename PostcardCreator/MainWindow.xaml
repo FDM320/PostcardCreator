@@ -1,0 +1,33 @@
+﻿<Window x:Class="PostcardCreator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PostcardCreator"
+        mc:Ignorable="d"
+        Title="PostcardCreator">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10*" />
+            <ColumnDefinition Width="350*" />
+            <ColumnDefinition Width="10*" />
+        </Grid.ColumnDefinitions>
+        <Image Margin="0,15,0,45" Name="userPhoto" Stretch="Fill" Grid.Column="1" />
+        <Button Height="25" HorizontalAlignment="Center" Margin="0,0,0,15" Name="loadButton" VerticalAlignment="Bottom" Width="90" Grid.Column="1" Click="loadButtonClick">Load Photo</Button>
+        <Image Margin="100,300,100,45" Name="postcardEffect" Source="postcard.png" Grid.Column="1" VerticalAlignment="Bottom" Visibility="Collapsed"/>
+        <Button Height="25" HorizontalAlignment="Center" Margin="-200,0,0,15" Name="createPostcardButton" VerticalAlignment="Bottom" Width="90" Grid.Column="1" Click="createPostcardButtonClick" Visibility="Hidden">Create Postcard</Button>
+        <Button Height="25" HorizontalAlignment="Center" Margin="200,0,0,15" Name="saveButton" VerticalAlignment="Bottom" Width="90" Grid.Column="1" Click="saveButtonClick" Visibility="Hidden">Save Photo</Button>
+        <Button Height="25" HorizontalAlignment="Center" Margin="-400,0,0,15" Name="credentialsButton" VerticalAlignment="Bottom" Width="90" Grid.Column="1" Click="credentialsButtonClick" Visibility="Hidden">Credentials</Button>
+        <Button Height="25" HorizontalAlignment="Center" Margin="400,0,0,15" Name="sendButton" VerticalAlignment="Bottom" Width="90" Grid.Column="1" Click="sendButtonClick" Visibility="Hidden">Send Email</Button>
+        <Rectangle Name="credentialsBackground" Grid.Column="1" Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="140" Margin="10,0,0,0" Stroke="Black" VerticalAlignment="Center" Width="220" Visibility="Collapsed"/>
+        <Label Name="credentialsLabel" Height="25" Content="Credentials " Grid.Column="1" HorizontalAlignment="Center" Margin="10,-115,0,0" VerticalAlignment="Center" Width="220" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" Foreground="White" Background="#FF38A1F3" Visibility="Collapsed"/>
+        <Label Name="usernameLabel" Height="25" Content="Username: " Grid.Column="1" HorizontalAlignment="Center" Margin="-100,-52,0,0" VerticalAlignment="Center" Visibility="Collapsed"/>
+        <Label Name="passwordLabel" Height="25" Content="Password: " Grid.Column="1" HorizontalAlignment="Center" Margin="-100,0,0,0" VerticalAlignment="Center" Visibility="Collapsed"/>
+        <Label Name="receiverLabel" Height="25" Content="Receiver: " Grid.Column="1" HorizontalAlignment="Center" Margin="-100,52,0,0" VerticalAlignment="Center" Visibility="Collapsed"/>
+        <TextBox Name="usernameTextBox" Grid.Column="1" HorizontalAlignment="Center" Height="25" Width="100" Margin="100,-52,0,0" TextWrapping="NoWrap" VerticalAlignment="Center" VerticalContentAlignment="Center" TextAlignment="Center" Visibility="Collapsed"/>
+        <PasswordBox Name="passwordBox" Grid.Column="1" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Height="25" Width="100" Margin="100,0,0,0" VerticalAlignment="Center" VerticalContentAlignment="Center" Visibility="Collapsed"/>
+        <TextBox Name="receiverTextBox" Grid.Column="1" HorizontalAlignment="Center" Height="25" Width="100" Margin="100,52,0,0" TextWrapping="NoWrap" VerticalAlignment="Center" VerticalContentAlignment="Center" TextAlignment="Center" Visibility="Collapsed"/>
+        <Button Name="enterCredentialsButton" Content="Enter" Grid.Column="1" HorizontalAlignment="Center" Margin="0,110,0,0" VerticalAlignment="Center" Width="75" Visibility="Collapsed" Click="enterCredentialsButtonClick"/>
+    </Grid>
+</Window>  
